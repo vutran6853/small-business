@@ -1,0 +1,20 @@
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.footer-items-container {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  
+}
+/* .footer-items-container >* .nav-link {
+  color: #a2a2a2;
+}
+
+.footer-items-container >* .nav-link:hover {
+  color: white;
+  text-decoration: underline;
+} */
