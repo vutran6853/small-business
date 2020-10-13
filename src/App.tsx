@@ -1,5 +1,6 @@
 import { defineComponent, reactive } from 'vue'
 import { RouterView, RouterLink } from 'vue-router'
+// import LOGO from './assets/hotmarkets-logo.png'
 
 import './vendors/bootstrap/css/bootstrap.css'
 // import './vendors/jquery/jquery.min.js'
@@ -62,7 +63,8 @@ const App = defineComponent({
     return (
       <div id="app2">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <a class="navbar-brand" href="#">HotMarkets</a>
+          <RouterLink to="/" class="navbar-brand">HotMarkets</RouterLink>
+          {/* <img src={LOGO} alt={LOGO} srcset=""/> */}
           <button class="navbar-toggler" type="button" onClick={this.handleToggleNavbarCollapse} data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -77,7 +79,7 @@ const App = defineComponent({
 
         <footer class="py-5 bg-dark">
           <div>
-            <p class="px-5 text-white">Copyright &copy; Your Website { new Date().getFullYear() }</p>
+            <p class="px-5 text-white">Copyright &copy; HotMarkets { new Date().getFullYear() }</p>
             <ul class="footer-items-container">
               <li onClick={() => this.handleSetNavbarItemActive('Home')}>
                 <RouterLink to="/" class="nav-link">Home</RouterLink>
