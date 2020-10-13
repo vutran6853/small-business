@@ -18,8 +18,8 @@ const App = defineComponent({
       isNavbarCollapse: true,
       isNavbarActive: false,
       navbarItems: [
-        { id: Math.random().toPrecision(10), text: 'Home', url: '/', isActive: true },
-        { id: Math.random().toPrecision(10), text: 'About', url: '/termsOfUse', isActive: false }
+        { id: (Math.random() * 64).toPrecision(10), text: 'Home', url: '/', isActive: true },
+        { id: (Math.random() * 64).toPrecision(10), text: 'About', url: '/termsOfUse', isActive: false }
       ]
     })
 
